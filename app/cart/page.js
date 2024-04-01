@@ -58,6 +58,7 @@ export default function Cart() {
 
   return (
     <>
+      <title>Keranjang</title>
       {cart.length > 0 ? (
         <>
           <section className="flex flex-col gap-y-6">

@@ -12,6 +12,10 @@ export const generateStaticParams = async () => {
   }));
 };
 
+export const generateMetadata = ({params: {category}}) => ({
+  title: `Kategori ${stringToCapitalize(category)}`,
+});
+
 export default async function CategoryPage({params: {category}}) {
   return (
     <>
